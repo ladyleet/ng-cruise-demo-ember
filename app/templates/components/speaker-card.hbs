@@ -1,0 +1,15 @@
+<div class="row">
+    {{#each speakers as |speaker|}}
+    <div class="col s12 m6 l4">
+     <div class="card">
+      <div class="card-image">
+        <img src="img/{{speaker.picture}}">
+      </div>
+        <div class="card-content">
+          <p>{{speaker.name}}</p>
+          <p>Twitter <a href="http://twitter.com/{{speaker.twitter}}">@{{speaker.twitter}}</a></p>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+</div>
